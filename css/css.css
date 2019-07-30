@@ -1,0 +1,149 @@
+* { margin: 0; padding: 0;}
+
+body, html { height:100%; }
+
+#canvas {
+    position:absolute;
+    width:100%;
+	height:100%;
+	background-color: #FDFDFD;
+}
+
+.soundContainer {
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	z-index: 100;
+}
+
+svg {
+	fill: #A1A1A1;
+	transition: all .2s ease-in-out; 
+}
+
+svg:hover {
+	fill: #222222;
+	transform: scale(1.3);
+}
+
+.modal-window {
+	position: fixed;
+	/* background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%); */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 1;
+	/* pointer-events: none; */
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+  .modal-window:target {
+	opacity: 1;
+	pointer-events: auto;
+  }
+  .modal-window > div {
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	background: #fff;
+  }
+
+  .modal-window header {
+	font-weight: bold;
+  }
+  .modal-window h1 {
+	font-size: 150%;
+	margin: 0 0 15px;
+  }
+  .modal-close {
+	color: #aaa;
+	line-height: 50px;
+	font-size: 80%;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 70px;
+	text-decoration: none;
+  }
+  .modal-close:hover {
+	color: black;
+  }
+  /* Demo Styles */
+  html, body {
+	height: 100%;
+  }
+  body {
+	font: 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	line-height: 1.5;
+	color: black;
+  }
+  #background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10;
+	background-image: linear-gradient(to right, #192a56 0, #273c75 100%);
+	opacity: 0.8
+  }
+  a {
+	color: inherit;
+  }
+  .container {
+	position: fixed;
+	z-index: 10;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  .modal-window div:not(:last-of-type) {
+	margin-bottom: 15px;
+  }
+  small {
+	color: #aaa;
+  }
+  .btn {
+	background-color: #fff;
+	padding: 1em 1.5em;
+	border-radius: 3px;
+	text-decoration: none;
+  }
+  .btn i {
+	padding-right: 0.3em;
+  }
+
+  .modal-heading {
+	  width: 100%;
+  }
+
+  .modal-text {
+	  width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+	#modal-div {
+		width: 60%;
+	  }
+	}
+  @media (max-width: 800px) {
+	#modal-div {
+		width: 75%;
+	  }
+	}
+
+  @media (max-width: 500px) {
+	#modal-div {
+		width: 90%;
+	  }
+	}
+
+  

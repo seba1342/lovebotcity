@@ -1,0 +1,36 @@
+{
+  "name": "love-island",
+  "version": "1.0.0",
+  "description": "Creative Computing Final Project",
+  "main": "main.js",
+  "repository": "https://github.com/kvithana/love-island.git",
+  "author": "Kalana Vithana <kalanavithana1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "dom-ease": "^0.9.3",
+    "fastpriorityqueue": "^0.6.3",
+    "intersects": "^2.7.1",
+    "pixi-ease": "^2.3.0",
+    "pixi-viewport": "^4.0.1",
+    "pixi.js": "^5.0.4",
+    "underscore": "^1.9.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo 'Starting Webpack dev server! \n' && webpack-dev-server",
+    "build": "webpack --config prod.config.js"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}
