@@ -18,7 +18,7 @@
     "pixi-ease": "^2.3.0",
     "pixi-viewport": "^4.0.1",
     "pixi.js": "^5.0.4",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
